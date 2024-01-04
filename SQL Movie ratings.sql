@@ -80,7 +80,7 @@ JOIN user_ratings
 ON movies.movie_id = user_ratings.movie_id
 WHERE running_time >= 90 and running_time < 120;
 
-
+-- Comparison of an average ratings of genres
 -- Average rating of dramas
 SELECT 'drama' AS genre, ROUND(AVG(CAST(rating AS FLOAT)), 2) AS avg_rating
 FROM movies
